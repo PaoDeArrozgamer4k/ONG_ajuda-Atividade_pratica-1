@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ONG com o objetivo de ajudar o maior número de necessitados, mas para isso, precisamos de sua ajuda.">
+    <title>ONG Ajuda/Cadastro</title>
+
+</head>
+<body>
+
+    <header>
+
+        <h1>ONG Ajuda</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="projetos.html#ajudar">Como Ajudar</a></li>
+                <li><a href="projetos.html#impacto">Impacto</a></li>
+                <li><a href="#cadastro">Cadastro</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="cadastro">
+
+            <h2>Faça agora o seu cadastro!</h2>
+
+            <form>
+                
+                <fieldset>
+
+                    <legend>Dados pessoais</legend>
+
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome"
+                    minlength="3" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(44) 99999-9999"
+                    maxlength="13" required>
+
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep"
+                        pattern="[0-9]{5}-\[0-9]{3}"
+                        placeholder="00000-000"
+                        minlength="8" required>
+                    
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf"
+                        pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+                        placeholder="000.000.000-00"
+                        minlength="11" required>
+
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+
+                </fieldset>
+
+                <button type="submit">Cadastrar</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <address>
+            Contato: <a href="mailto:ong@ajuda.org.br">ong@ajuda.org.br</a>
+        </address>
+
+        <p>&copy; 2026 ONG Ajuda. Todos os direitos reservados.</p>
+
+    </footer>
+</body>
+</html>
